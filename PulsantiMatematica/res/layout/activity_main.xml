@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+
+    <Space
+        android:id="@+id/spazio"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+
+    <TextView
+        android:id="@+id/nomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spazio"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <Space
+        android:id="@+id/spazio2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/nomeText"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spazio2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonPiuUno"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="+1"
+            android:textSize="20sp"
+            android:onClick="piuUno"
+            />
+
+        <Button
+            android:id="@+id/buttonMenoUno"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/buttonPiuUno"
+            android:layout_centerHorizontal="true"
+            android:text="-1"
+            android:textSize="20sp"
+            android:onClick="menoUno"
+            />
+
+        <Button
+            android:id="@+id/buttonPerDue"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/buttonMenoUno"
+            android:layout_centerHorizontal="true"
+            android:text="*2"
+            android:textSize="20sp"
+            android:onClick="perDue"
+            />
+
+        <Button
+            android:id="@+id/buttonElevatoDue"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/buttonPerDue"
+            android:layout_centerHorizontal="true"
+            android:text="^2"
+            android:textSize="20sp"
+            android:onClick="elevatoDue"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
