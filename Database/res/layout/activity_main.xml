@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Space
+        android:id="@+id/spazio"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:text="1"
+        android:textSize="30sp"
+        android:layout_below="@+id/spazio"
+        android:inputType="number"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Leggi dati"
+        android:id="@+id/btoLeggiDati"
+        android:layout_below="@+id/editText"
+        android:onClick="onClick"
+         />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btoLeggiDati"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp" />
+
+</RelativeLayout>

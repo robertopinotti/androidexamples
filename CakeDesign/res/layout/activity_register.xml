@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="#FFFBD2"
+                >
+
+    <Space
+        android:id="@+id/spazio"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+
+    <EditText
+        android:id="@+id/nomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Il tuo nome e cognome"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/spazio"
+        />
+
+    <EditText
+        android:id="@+id/mailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="La tua mail"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/nomeText"
+        />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Inserisci una password numerica"
+        android:inputType="numberPassword"
+        android:layout_below="@+id/mailText"
+        />
+
+    <Space
+        android:id="@+id/spazio2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/passwordText"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spazio2"
+        android:text="Seleziona la tua torta preferita:"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView2"
+        android:entries="@array/lista_torte"
+        android:spinnerMode="dropdown" />
+
+    <Space
+        android:id="@+id/spazio3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/spinner"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spazio3"
+        android:text="Accetto le condizioni di utilizzo"
+        />
+
+
+    <Space
+        android:id="@+id/spazio4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/checkBox"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/spazio4"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_orange_light"
+        android:text="Registrami"
+        />
+
+</RelativeLayout>
